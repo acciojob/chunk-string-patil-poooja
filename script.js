@@ -1,5 +1,8 @@
 function stringChop(str, size) {
   const result = [];
+	  if(str===null){
+      return result;
+  }
   // Loop through the string, chunking it into substrings
   chunkLength=parseInt(size);
   for (let i = 0; i < str.length; i += chunkLength) {
