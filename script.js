@@ -1,5 +1,12 @@
 function stringChop(str, size) {
-  // your code here
+  const result = [];
+  // Loop through the string, chunking it into substrings
+  chunkLength=parseInt(size);
+  for (let i = 0; i < str.length; i += chunkLength) {
+    result.push(str.slice(i, i + chunkLength));
+  }
+  return result;
+
 }
 
 // Do not change the code below
